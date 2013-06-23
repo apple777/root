@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body onload="r(name)">
+
+<p>Click the button to call a function with arguments</p>
+
+<button onclick="myFunction(un,'DocLab')">Try it</button>
+
+<script>
+
+var un = "";
+function r(name)
+{
+	var un = prompt("Please enter your user name","");
+	//alert(un);
+	console.log(un);
+	if (un =null && un="") {
+		alert( name + " is empty");
+	}else{
+		alert( name + " is ok");
+	}
+}
+
+
+function myFunction(name,job)
+{
+alert("Welcome " + name + ", the " + job);
+}
+
+
+</script>
+
+</body>
+</html>
